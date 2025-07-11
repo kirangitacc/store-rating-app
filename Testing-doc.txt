@@ -1,0 +1,79 @@
+🧪 Testing Report — Store Rating App
+
+Project Overview:
+A role-based full-stack web app using React, Express.js, MySQL, and JWT authentication. It allows users to rate stores and supports three distinct user roles — System Administrator, Normal User, and Store Owner.
+
+✅ Roles Verified:
+1. System Administrator
+2. Normal User
+3. Store Owner
+
+---
+
+🛡️ System Administrator Functionalities:
+
+✔ Add new stores and users (admin and normal)
+✔ Dashboard displays accurate counts of:
+   - Total Users
+   - Total Stores
+   - Total Ratings
+✔ Created users with validated fields:
+   - Name (min 20, max 60)
+   - Email format
+   - Password (8–16 chars, includes uppercase + special)
+   - Address (max 400 chars)
+✔ Viewed store list with Name, Email, Address, Rating
+✔ Viewed user list with Name, Email, Address, Role
+✔ Filtered listings by Name, Email, Address, Role
+✔ Viewed individual user details including Store Owner ratings
+✔ Logged out successfully
+
+---
+
+👤 Normal User Functionalities:
+
+✔ Registered and logged in
+✔ Validated signup fields
+✔ Updated password post-login
+✔ Viewed list of all stores
+✔ Searched by name and address
+✔ Store cards showed:
+   - Name, Address, Overall Rating
+   - User’s Submitted Rating
+   - Submit/Modify Rating options
+✔ Submitted and updated rating (1–5 scale)
+✔ Logged out cleanly
+
+---
+
+🏪 Store Owner Functionalities:
+
+✔ Logged in successfully
+✔ Updated password post-login
+✔ Viewed list of users who rated their store
+✔ Displayed average rating
+✔ Logged out successfully
+
+---
+
+📝 Form Validation Tests:
+
+| Field     | Rule                                           | Result |
+|-----------|------------------------------------------------|--------|
+| Name      | 20–60 characters                               | ✅     |
+| Address   | Max 400 characters                             | ✅     |
+| Password  | 8–16 chars, one uppercase, one special char    | ✅     |
+| Email     | Standard email format                          | ✅     |
+
+---
+
+🔍 Manual Test Summary:
+
+- JWT tokens successfully generated and embedded with user role & ID
+- Role-based access control enforced across all routes
+- All protected endpoints verified using token header
+- Console logging used to validate request payloads and server responses
+- UI verified across desktop and mobile resolutions
+
+Testing conducted using browser interactions, backend console logs, and database queries via SQLite & MySQL.
+
