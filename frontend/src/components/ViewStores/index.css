@@ -2,10 +2,17 @@
   padding: 32px;
   background-color: #f4f6f8;
 }
+.store-panel h2 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #333;
+}
 
 .filter-bar {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
   margin-bottom: 12px;
   align-items: center; /* ✅ vertically center inputs */

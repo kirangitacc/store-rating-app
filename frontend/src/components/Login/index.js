@@ -69,7 +69,10 @@ const Login = () => {
          StoreView is a secure, responsive web application designed to help users discover, 
          rate, and monitor local stores. With dynamic dashboards and role-based access, 
          admins can manage store data, assign ownership, and view user engagement. 
-         Store owners can track ratings and feedback submitted for their stores, while users enjoy a streamlined interface to search, sort, and rate stores in real time. Featuring JWT authentication, modular architecture, and smooth deployment workflows, StoreView delivers scalable performance and meaningful insights into store reputation.
+         Store owners can track ratings and feedback submitted for their stores, while users enjoy a streamlined interface to search,
+          sort, and rate stores in real time. Featuring JWT authentication, modular architecture, and smooth deployment workflows,
+           StoreView delivers scalable performance and meaningful insights into store reputation. 
+           admin@adminportal.com , Admin@123, user-priyanka.acharya@gmail.com , User#456,owner-neha.kulkarni@storehub.in, Owner$789
         </p>
         <img src={adminImg} alt="Admin" className="login-img" />
 
