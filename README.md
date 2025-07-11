@@ -2,6 +2,8 @@
 
 A full-stack web application enabling users to rate registered stores on a platform with role-based access control. Built using React, Express.js, and MySQL, the app supports three user roles: **System Administrator**, **Normal User**, and **Store Owner** — each with unique functionalities.
 
+ admin@adminportal.com , Admin@123, user-priyanka.acharya@gmail.com , User#456,owner-neha.kulkarni@storehub.in, Owner$789
+
 ---
 
 ## 🧰 Tech Stack
