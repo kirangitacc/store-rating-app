@@ -1,0 +1,85 @@
+.register-con {
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:20px;
+}
+
+.register-card {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  width: 350px;
+  max-width: 90vw;
+  height:80%;
+  background-color: white;
+}
+
+.logo {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: green;
+  margin-bottom: 0;
+  min-width:300px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-label {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  color: black;
+  font-weight: 500;
+}
+
+.register-inp {
+  padding: 10px 12px;
+  margin-bottom: 18px;
+  border: 1px solid #dfe6e9;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.register-inp:focus {
+  border: 1.5px solid #0984e3;
+}
+
+.register-btn {
+  background: #0984e3;
+  color: #fff;
+  border: none;
+  padding: 12px 0;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+
+.register-btn:hover {
+  background: #74b9ff;
+}
+
+.register-err-msg {
+  color: #d63031;
+  font-size: 0.95rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.register-success-msg {
+  color: #00b894;
+  font-size: 0.95rem;
+  margin-top: 10px;
+  text-align: center;
+}
+

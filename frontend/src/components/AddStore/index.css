@@ -1,0 +1,32 @@
+.form-wrapper {
+  padding: 32px;
+  max-width: 500px;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+input,
+select {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.status-msg {
+  margin-top: 16px;
+  font-weight: bold;
+  color: green;
+}

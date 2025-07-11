@@ -1,0 +1,163 @@
+.profile-wrapper {
+  padding: 0px;
+}
+
+.profile-card {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.profile-card:hover {
+  transform: scale(1.03);
+}
+
+.profile-card h2 {
+  color: #333;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  background-color: #007bff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  color: white;
+  font-weight: bold;
+  margin: 10px auto;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 10px;
+}
+
+.profile-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f4f4f4;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.profile-row label {
+  font-weight: bold;
+  color: #555;
+}
+
+.loading,
+.error {
+  text-align: center;
+  font-size: 18px;
+  color: #d9534f;
+  font-weight: bold;
+}
+
+.reset-btn {
+  margin-top: 20px;
+  padding: 10px 16px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.reset-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.reset-form input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.reset-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+  justify-content: flex-start;
+}
+
+.reset-actions button {
+  padding: 10px 16px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.reset-actions button[type="submit"] {
+  background-color: #2e7d32;
+  color: white;
+}
+
+.close-reset {
+  background-color: #e53935;
+  color: white;
+}
+
+.status-msg {
+  margin-top: 12px;
+  color: #388e3c;
+  font-weight: bold;
+}
+
+/* 📱 Responsive Design */
+@media screen and (max-width: 768px) {
+  .profile-card {
+    margin: 20px;
+    padding: 10px;
+    box-shadow: none;
+  }
+
+  .profile-card h2 {
+    font-size: 20px;
+  }
+
+  .profile-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .reset-form input,
+  .reset-actions button {
+    font-size: 0.95rem;
+    padding: 8px 12px;
+  }
+
+  .reset-btn {
+    width: 100%;
+  }
+
+  .profile-row span {
+    font-size:15px;
+  } 
+
+  .profile-avatar {
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+  }
+}

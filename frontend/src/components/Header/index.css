@@ -1,0 +1,144 @@
+/* ========= 🖥️ Desktop Styles ========= */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #292b2c;
+  color: white;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  height: 10vh;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  background: #f39c12;
+  color: white;
+  max-width: 0px;
+  height: 20px;
+  margin-top: 10px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #f39c12;
+}
+
+.logout-btn {
+  background-color: #e74c3c;
+  border: none;
+  padding: 6px 12px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+}
+
+.nav-toggle {
+  display:none;
+}
+
+
+/* ========= 📱 Mobile Popup Styles ========= */
+@media screen and (max-width: 768px) {
+
+  .nav-links {
+    display: none;
+  }
+  .app-header {
+    padding: 10px 15px;
+    height: auto;
+  }
+  .logo{
+    width: 30px;
+    height: 30px;
+  }
+
+  .nav-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+
+  .popup-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41, 43, 44, 0.95);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .popup-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    color: white;
+  }
+
+  .popup-content a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  .popup-content a:hover {
+    color: #f39c12;
+  }
+
+  .close-popup {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .logout-btn {
+    background-color: #e74c3c;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    color: white;
+  }
+
+  .logout-btn:hover {
+    background-color: #c0392b;
+  }
+}

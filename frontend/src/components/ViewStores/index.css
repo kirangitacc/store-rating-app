@@ -1,0 +1,136 @@
+.store-panel {
+  padding: 32px;
+  background-color: #f4f6f8;
+}
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+  align-items: center; /* ✅ vertically center inputs */
+}
+
+.filter-bar input {
+  padding: 10px;         /* ✅ reduce vertical padding */
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  flex: 1 1 240px;
+  max-width: 300px;
+  height: 36px;              /* ✅ fixed height helps consistency */
+  box-sizing: border-box;
+}
+
+
+/* 📦 Store Cards Layout */
+.list-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-height: 60vh;
+  overflow-y: auto;
+  padding-right: 4px;
+  justify-content: center;
+}
+
+/* 🧾 Card Design */
+.card {
+  background: #fff;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: box-shadow 0.2s ease;
+  flex: 1 1 280px;
+  max-width: 320px;
+  box-sizing: border-box;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* 🎯 Card Content */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.card-header h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  max-width: 75%;
+  overflow-wrap: break-word;
+}
+
+.card p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  word-break: break-word;
+  line-height: 1.3;
+}
+
+.card p strong {
+  color: #333;
+}
+
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.delete-btn:hover svg {
+  transform: scale(1.1);
+}
+
+/* 📱 Responsive Layout */
+@media screen and (max-width: 768px) {
+  .store-panel {
+    padding: 16px;
+  }
+
+  .filter-bar {
+    flex-direction: column;
+    max-height: 20vh;
+    align-items: stretch;
+    gap: 8px;
+    margin-bottom: 10px;
+    background-color: transparent;
+  }
+
+  .filter-bar input {
+    width: 100%;
+    max-width: none;
+    max-height: 30px;
+  }
+
+  .list-grid {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-height: 53vh;
+    padding: 10px;
+    max-width: 90%;
+  }
+
+  .card {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    margin-top: auto;
+  }
+
+  .store-panel h2 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    margin-top:10px;
+    padding-top:0px;
+  }
+}
+

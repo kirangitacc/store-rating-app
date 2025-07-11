@@ -1,0 +1,22 @@
+.rating-content {
+  padding: 32px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 400px;
+  margin: auto;
+}
+input, select {
+  padding: 10px;
+  font-size: 1rem;
+}
+button {
+  background: #1976d2;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+}
+

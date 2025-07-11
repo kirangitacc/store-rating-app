@@ -1,0 +1,126 @@
+/* ========= 🌐 Base Layout ========= */
+.view-users {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f6f8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ========= 🧩 Panel Section ========= */
+.user-panel {
+  padding: 20px;
+  flex: 1;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Prevent full-page scroll */
+}
+
+.user-panel h2 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #333;
+}
+
+/* ========= 🔍 Filter Section ========= */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.filter-bar input,
+.filter-bar select {
+  padding: 8px 10px;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  height: 36px;
+  flex: 1 1 220px;
+  max-width: 260px;
+  box-sizing: border-box;
+}
+
+/* ========= 📦 Cards Container ========= */
+.user-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  overflow-y: auto;
+  max-height: 50vh; /* Only this scrolls */
+  box-sizing: border-box;
+}
+
+/* ========= 🧾 Card Styles ========= */
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 300px;
+  box-sizing: border-box;
+  transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.card p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  word-break: break-word;
+}
+
+.card p strong {
+  color: #333;
+}
+
+/* ========= 📱 Mobile Styles ========= */
+@media screen and (max-width: 768px) {
+  .user-panel {
+    padding: 16px;
+  }
+
+  .filter-bar2 {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    margin-bottom: 16px;
+    background-color: aqua;
+  }
+
+  .filter-bar2 input,
+  .filter-bar2 select {
+    width: 100%;
+    max-width: 100%;
+    height: 35px;
+    font-size: 10px;
+    box-sizing: border-box;
+  }
+
+  .user-flex {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 16px;
+    height: 50vh;
+    padding: 10px;
+    justify-content: flex-start;
+  }
+
+  .card {
+    width: 100%;
+    padding: 14px;
+  }
+
+  .user-panel h2 {
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+  }
+}
