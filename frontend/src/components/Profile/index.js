@@ -15,7 +15,7 @@ const Profile = () => {
 
   useEffect(() => {
     const fetchUserDetails = async () => {
-      const res = await fetch(`http://localhost:5000/user/${userId}`, {
+      const res = await fetch(`https://store-rating-app-pu73.onrender.com/user/${userId}`, {
         headers: { Authorization: `Bearer ${jwtToken}` }
       });
       const data = await res.json();
@@ -35,7 +35,7 @@ const Profile = () => {
       setStatusMsg("Passwords do not match");
       return;
     }
-    const res = await fetch(`http://localhost:5000/user/${userId}/reset-password`, {
+    const res = await fetch(`https://store-rating-app-pu73.onrender.com/user/${userId}/reset-password`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

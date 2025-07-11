@@ -12,7 +12,7 @@ const ViewStores = () => {
 
   // Fetch initial store data
   useEffect(() => {
-    fetch('http://localhost:5000/stores', {
+    fetch('https://store-rating-app-pu73.onrender.com/stores', {
       headers: { Authorization: `Bearer ${token}` }
     })
       .then(res => res.json())
@@ -42,7 +42,7 @@ const ViewStores = () => {
     if (!confirmed) return;
 
     try {
-      const res = await fetch(`http://localhost:5000/admin/stores/${storeId}`, {
+      const res = await fetch(`https://store-rating-app-pu73.onrender.com/admin/stores/${storeId}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${token}`

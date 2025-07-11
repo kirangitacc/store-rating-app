@@ -10,7 +10,7 @@ const OwnerDashboard = () => {
   useEffect(() => {
     const fetchOwnerStoreData = async () => {
       try {
-        const res = await fetch('http://localhost:5000/owner/store', {
+        const res = await fetch('https://store-rating-app-pu73.onrender.com/owner/store', {
           headers: { Authorization: `Bearer ${token}` },
         });
 

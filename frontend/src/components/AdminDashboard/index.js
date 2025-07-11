@@ -14,7 +14,7 @@ const AdminDashboard = () => {
   useEffect(() => {
   const fetchSummary = async () => {
     try {
-      const response = await fetch('http://localhost:5000/admin/stats', {
+      const response = await fetch('https://store-rating-app-pu73.onrender.com/admin/stats', {
         headers: { Authorization: `Bearer ${token}` }
       });
 

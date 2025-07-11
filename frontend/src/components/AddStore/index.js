@@ -12,7 +12,7 @@ const AddStore = () => {
 
   const handleSubmit = async e => {
     e.preventDefault();
-    const res = await fetch('http://localhost:5000/admin/stores', {
+    const res = await fetch('https://store-rating-app-pu73.onrender.com/admin/stores', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

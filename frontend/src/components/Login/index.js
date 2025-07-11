@@ -16,7 +16,7 @@ const Login = () => {
     event.preventDefault();
 
     const userData = { email, password };
-    const url = 'http://localhost:5000/login/';
+    const url = 'https://store-rating-app-pu73.onrender.com/login/';
 
     const options = {
       method: 'POST',

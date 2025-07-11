@@ -9,7 +9,7 @@ const ViewUsers = () => {
   const token = localStorage.getItem('jwt_token');
 
   useEffect(() => {
-    fetch('http://localhost:5000/admin/users', {
+    fetch('https://store-rating-app-pu73.onrender.com/admin/users', {
       headers: { Authorization: `Bearer ${token}` }
     })
       .then(res => res.json())

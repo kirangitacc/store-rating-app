@@ -13,7 +13,7 @@ const StoreListings = () => {
 const fetchStores = useCallback(async () => {
   try {
     const res = await fetch(
-      `http://localhost:5000/stores/search?name=${search.name}&address=${search.address}`,
+      `https://store-rating-app-pu73.onrender.com/stores/search?name=${search.name}&address=${search.address}`,
       {
         headers: { Authorization: `Bearer ${token}` },
       }
@@ -41,7 +41,7 @@ useEffect(() => {
     }
 
     try {
-      await fetch('http://localhost:5000/ratings', {
+      await fetch('https://store-rating-app-pu73.onrender.com/ratings', {
         method: 'POST',
         headers: {
           Authorization: `Bearer ${token}`,

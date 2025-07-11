@@ -10,7 +10,7 @@ const RatingSubmission = () => {
   const token = localStorage.getItem('jwt_token');
 
   useEffect(() => {
-    fetch('http://localhost:5000/stores', {
+    fetch('https://store-rating-app-pu73.onrender.com/stores', {
       headers: { Authorization: `Bearer ${token}` }
     })
       .then(res => res.json())
@@ -19,7 +19,7 @@ const RatingSubmission = () => {
 
   const handleSubmit = async e => {
     e.preventDefault();
-    const res = await fetch(`http://localhost:5000/stores/${selected}/rating`, {
+    const res = await fetch(`https://store-rating-app-pu73.onrender.com/stores/${selected}/rating`, {
       method: 'POST',
       headers: {
         Authorization: `Bearer ${token}`,

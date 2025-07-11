@@ -11,7 +11,7 @@ const AddUser = () => {
 
   const handleSubmit = async e => {
     e.preventDefault();
-    const res = await fetch('http://localhost:5000/admin/users', {
+    const res = await fetch('https://store-rating-app-pu73.onrender.com/admin/users', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
